@@ -18,5 +18,6 @@ public class User {
 
     private String email;
     private String password;
-    private String name;
+    // for authorization
+    private String name; // users name in app
 }

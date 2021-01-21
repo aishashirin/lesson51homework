@@ -11,8 +11,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Song {
     @Id
     private int id;
-    @Indexed
+    @Indexed // for search by songs name
     private String name;
 
-    private State state;
+    private State state; // shows songs state:in play or stopped
 }

@@ -12,14 +12,14 @@ import java.util.List;
 public class Album {
     @Id
     private int id;
-    @Indexed
+    @Indexed // for search by albums name
     private String name;
-    @Indexed
+    @Indexed // for search by albums year
     private int year;
 
-    @DBRef
+    @DBRef // shows albums author
     private Author author;
 
-    @DBRef
+    @DBRef // shows songs of album
     private List<Song> songs;
 }

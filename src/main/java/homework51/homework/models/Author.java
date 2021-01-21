@@ -10,6 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Author {
     @Id
     private int id;
-    @Indexed
+    @Indexed // for search by authors name
     private String name;
 }
